@@ -5,7 +5,7 @@ var store = require ('../src/store').store;
 describe('Store', function() {
 
   it('with toString() should return a string', function() {
-    expect(store.toString).to.be.a('string');
+    expect(store.toString()).to.be.a('string');
   });
 
   it('should return all these products', function() {
