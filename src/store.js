@@ -2,6 +2,7 @@ var chalk = require('chalk');
 
 var Book = require ('./product').Book;
 var DVD = require ('./product').DVD;
+var VideoGame = require ('./product').VideoGame;
 var service = require ('./rateExchangeService').service;
 
 var products = [
@@ -17,7 +18,11 @@ var products = [
   new DVD('Alice In Wonderland', 14.99, true),
   new DVD('The Wire Season 1', 29.99, false),
   new DVD('Breaking Bad: Season 05', 16.49, false),
-  new DVD('Freaks and Geeks: The Complete series', 54.99, false)
+  new DVD('Freaks and Geeks: The Complete series', 54.99, false),
+  // VideoGame
+  new VideoGame('FIFA 17', 39.56, 'PlayStation 4'),
+  new VideoGame('XCOM: Enemy Unknown', 15.00, 'PC'),
+  new VideoGame('Super Smash Bros Melee', 63.90, 'Game Cube')
 ];
 
 function findProducts(belowCost) {
