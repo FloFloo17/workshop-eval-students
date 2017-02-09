@@ -53,7 +53,7 @@ function toString(currency, rateCurrency) {
     productsList += '\n - ' + products[i].toString(currency, rateCurrency);
   }
   var result = chalk.green('The store is open, ${productsLength} articles are available : ${productsList}');
-  return new String(result);
+  return String(result);
 }
 
 function open() {
